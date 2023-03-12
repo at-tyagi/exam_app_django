@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{%static 'css/teststyle.css' %}">
+    </head>
+    <body>
+    <div class="heading">
+        <h1>Test Paper!</h1>
+    </div>
+    {% if level %}
+    {{level}}
+    {% else %}
+    level not defined
+    {% endif %}
+<div class="questionblock">
+        <div class="ques">
+            <h2>{{que}}</h2>
+        </div>
+        <div class="options">
+        <input type="radio" name="answer"> <span>{{a}}</span>
+        </div>
+        <div class="options">
+        <input type="radio" name="answer"> <span>{{b}}</span>
+        </div>
+        <div class="options">
+        <input type="radio" name="answer"> <span>{{c}}</span>
+        </class>
+        <div class="options">
+        <input type="radio" name="answer"> <span>{{d}}</span>
+        </div>
+        <div class="submit" >
+        <input type="submit" value="Finish">
+        </div>
+</div>
+
+    </body>
+</html>

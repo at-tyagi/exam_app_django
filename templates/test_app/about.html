@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        {% load app_tags %}
+        {% get_date as today %}
+        {{today|date:"d M Y"}}
+        <h1>{{msg|quotes}}</h1>
+        <h2></h2>
+    </body>
+</html>
